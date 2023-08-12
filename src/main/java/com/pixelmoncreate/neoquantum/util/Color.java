@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-@SuppressWarnings({"unused", "MagicNumber", "SpellCheckingInspection"})
+@SuppressWarnings({"unused", "MagicNumber"})
 public class Color {
     private static final Map<String, Color> NAMED_MAP = new HashMap<>();
     private static final Pattern PATTERN_LEADING_JUNK = Pattern.compile("(#|0x)", Pattern.CASE_INSENSITIVE);

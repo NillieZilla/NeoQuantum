@@ -20,7 +20,7 @@ public class KeyPressOnItemPacket {
 
     public void handle(Supplier<NetworkEvent.Context> context) {
         ServerPlayer player = context.get().getSender();
-        if (player != null && player.containerMenu != null && this.slot >= 0 && this.slot < player.containerMenu.slots.size()) {
+        if (player != null && this.slot >= 0 && this.slot < player.containerMenu.slots.size()) {
             Slot inventorySlot = player.containerMenu.getSlot(this.slot);
             ItemStack stack = inventorySlot.getItem();
 

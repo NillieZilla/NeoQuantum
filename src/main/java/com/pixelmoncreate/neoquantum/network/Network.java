@@ -1,6 +1,7 @@
 package com.pixelmoncreate.neoquantum.network;
 
 import com.pixelmoncreate.neoquantum.NeoQuantum;
+import com.pixelmoncreate.neoquantum.util.Const;
 import com.pixelmoncreate.neoquantum.util.MismatchedVersionsException;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.HandshakeHandler;
@@ -11,8 +12,6 @@ import net.minecraftforge.network.simple.SimpleChannel;
 
 import java.util.Objects;
 import java.util.regex.Pattern;
-
-import static com.mojang.text2speech.Narrator.LOGGER;
 
 public final class Network {
     public static final String VERSION = "nquantum-net-14";
@@ -60,7 +59,7 @@ public final class Network {
         String serverNetVersion = readNetworkVersion(buffer);
         String serverModVersion = readModVersion(buffer);
 
-        LOGGER.debug("Read NeoQuantum server version as {} ({})", serverModVersion, serverNetVersion);
+        Const.LOGGER.debug("Read NeoQuantum server version as {} ({})", serverModVersion, serverNetVersion);
 
         if (!Network.VERSION.equals(serverNetVersion)) {
             String msg = String.format("This server is running a different version of NeoQuantum. Try updating Silent Gear on the client and/or server. Client version is %s (%s) and server version is %s (%s).",
