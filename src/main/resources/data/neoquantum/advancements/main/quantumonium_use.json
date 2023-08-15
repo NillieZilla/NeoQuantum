@@ -1,0 +1,36 @@
+{
+  "parent": "neoquantum:main/root",
+  "criteria": {
+    "use_quantumonium": {
+      "conditions": {
+        "item": {
+          "items": [
+            "neoquantum:quantumonium"
+          ]
+        }
+      },
+      "trigger": "neoquantum:use_item_success"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.neoquantum:quantumoniumUse.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "neoquantum:quantumonium"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.neoquantum:quantumoniumUse"
+    }
+  },
+  "requirements": [
+    [
+      "use_quantumonium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

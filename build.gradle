@@ -46,6 +46,9 @@ minecraft {
 
             property 'forge.enabledGameTestNamespaces', mod_id
             arg "-mixin.config=mixins.${mod_id}.json"
+            property 'mixin.env.remapRefMap', 'true'
+
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             args '--username', mod_authors
 
         }
@@ -55,6 +58,9 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
             arg "-mixin.config=mixins.${mod_id}.json"
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             args '--username', mod_authors
 
         }
@@ -77,6 +83,13 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
 
+    maven { url = "https://maven.theillusivec4.top/" }
+    maven {
+
+        name = "Jared"
+        url = "https://maven.blamejared.com/"
+
+    }
     mavenLocal()
 
 }
@@ -84,6 +97,10 @@ repositories {
 dependencies {
 
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli-xplat:${minecraft_version}-81")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli-xplat:${minecraft_version}-81")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
 }

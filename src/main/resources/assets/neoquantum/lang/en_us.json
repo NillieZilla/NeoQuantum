@@ -1,0 +1,25 @@
+{
+  "itemGroup.neoquantum": "NeoQuantum",
+  "neoquantum.desc": "Welcome to Quantum!",
+  "itemGroup.neoquantum.neoquantum": "NeoQuantum",
+  "neoquantum.subtitle.quantumoniumOpen": "Quantumonium Open",
+  "item.neoquantum.quantumonium": "Quantumonium",
+  "neoquantum.landing": "Welcome to Neo Quantum!",
+
+  "advancement.neoquantum:quantumoniumUse": "Quantumonium!",
+  "advancement.neoquantum:quantumoniumUse.desc": "Let's get started.",
+
+  "neoquantummisc.quantumoniumcover0": "Quantumonium",
+  "neoquantummisc.quantumoniumcover1": "Nillie~",
+
+  "neoquantum.category.basics": "Getting Started",
+  "neoquantum.entry.welcome": "Welcome To neoquantum",
+  "neoquantum.tagline.welcome": "Welcome to the Hotel NeoQuantum",
+  "neoquantum.page.welcome0": "",
+  "neoquantum.page.welcome1": "",
+  "neoquantum.page.welcome2": "",
+  "neoquantum.page.welcome3": "",
+  "neoquantum.page.welcome4": "",
+  "neoquantum.page.welcome5": "",
+  "neoquantum.page.welcome6": ""
+}

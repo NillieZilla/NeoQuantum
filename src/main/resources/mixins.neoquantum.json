@@ -2,12 +2,15 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.pixelmoncreate.neoquantum.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.neoquantum.refmap.json",
   "mixins": [
-
+    "AttributeMixin",
+    "CombatRulesMixin",
+    "IForgeEntityMixin"
   ],
   "client": [
+    "ItemInHandRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "quantumonium": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "neoquantum:quantumonium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/obsidian.png",
+    "description": {
+      "translate": "neoquantum.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "neoquantum:quantumonium"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "itemGroup.neoquantum"
+    }
+  },
+  "requirements": [
+    [
+      "quantumonium"
+    ]
+  ]
+}

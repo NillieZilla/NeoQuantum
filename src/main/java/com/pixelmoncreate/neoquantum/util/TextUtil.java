@@ -1,6 +1,5 @@
 package com.pixelmoncreate.neoquantum.util;
 
-import com.pixelmoncreate.neoquantum.config.Config;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Component;

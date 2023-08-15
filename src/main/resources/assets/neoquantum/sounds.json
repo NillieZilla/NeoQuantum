@@ -1,0 +1,10 @@
+{
+  "quantumonium_open": {
+    "sounds": ["neoquantum:quantumonium_open"],
+    "subtitle": "neoquantum.subtitle.quantumoniumOpen"
+  },
+  "quantumonium_page": {
+    "sounds": ["neoquantum:quantumonium_page"],
+    "subtitle": "neoquantum.subtitle.quantumoniumPage"
+  }
+}

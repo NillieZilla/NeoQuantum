@@ -1,0 +1,33 @@
+{
+  "name": "neoquantum.entry.welcome",
+  "category": "neoquantum:basics",
+  "icon": "neoquantum:quantumonium",
+  "priority": true,
+  "sortnum": -10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome0"
+    },
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome1"
+    },
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome2"
+    },
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome3"
+    },
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome5"
+    },
+    {
+      "type": "text",
+      "text": "neoquantum.page.welcome6"
+    }
+  ]
+}
